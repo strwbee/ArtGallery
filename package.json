@@ -15,7 +15,13 @@
   },
   "devDependencies": {
     "eslint": "^9.18.0",
+    "gh-pages": "^6.3.0",
     "jest": "^29.7.0",
     "supertest": "^7.0.0"
+  },
+  "homepage": "https://strwbee.github.io/ArtGallery",
+  "scripts": {
+    "predeploy": "mkdir -p docs && cp -R frontend/. docs/ && cp -R data docs/data",
+    "deploy":   "gh-pages -d docs"
   }
 }

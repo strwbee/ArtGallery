@@ -4,10 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js",
-    "build": "rm -rf docs && mkdir docs && cp -R frontend/* docs/ && cp -R data docs/data",
-    "predeploy": "npm run build",
-    "deploy":   "gh-pages -d docs"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +18,5 @@
     "gh-pages": "^6.3.0",
     "jest": "^29.7.0",
     "supertest": "^7.0.0"
-  },
-  "homepage": "https://strwbee.github.io/ArtGallery"
+  }
 }

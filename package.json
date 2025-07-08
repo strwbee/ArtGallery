@@ -6,7 +6,7 @@
     "test": "jest",
     "start": "node server.js",
     "build": "rm -rf docs && mkdir docs && cp -R frontend/* docs/ && cp -R data docs/data",
-    "predeploy": "mkdir -p docs && cp -R frontend/. docs/ && cp -R data docs/data",
+    "predeploy": "npm run build",
     "deploy":   "gh-pages -d docs"
   },
   "keywords": [],
